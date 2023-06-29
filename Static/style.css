@@ -124,7 +124,25 @@ section {
 
  .landing {
    height: 100vh;
+   display: grid;
  }
+
+ .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem; /* Optional: Add a gap between the section and the div box */
+}
+
+
+.box {
+  background: linear-gradient(to right, #ffffff50, #77777750);
+  padding: 2rem;
+  transition: background-color 0.5s ease;
+}
+
+.box:hover {
+  background: linear-gradient(to right, #ffffff70, #77777770);
+}
  
  @media (min-width: 768px) {
    .text-content {
