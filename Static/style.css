@@ -3,20 +3,25 @@ h1, h2, h3 {
    font-family: 'Segoe UI', sans-serif;
    font-weight: bold;
    color: #ffffff;
-   margin-bottom: 10px;
- }
+   margin-bottom: 1%;
+}
  
- h1 {
-   font-size: 32px;
- }
- 
- h2 {
-   font-size: 24px;
- }
- 
- h3 {
-   font-size: 18px;
- }
+ .container {
+  font-size: 16px; /* Fallback font size for browsers that do not support relative units */
+  font-size: 1em; /* Set the base font size of the container in em */
+}
+
+h1 {
+  font-size: 1.00em; /* Set h1 font size to 1.5 times the container's base font size */
+}
+
+h2 {
+  font-size: 0.75em; /* Set h2 font size to 1.25 times the container's base font size */
+}
+
+h3 {
+  font-size: 0.50em; /* Set h3 font size to the container's base font size */
+}
  
  /* Paragraph Styles */
  p {
@@ -38,7 +43,7 @@ a:visited {
 
  /* Background Styles */
  body {
-   background: linear-gradient(to bottom, #007592, #0a043c);
+   background: linear-gradient(to bottom, #15637450, #d6595950);
  }
  
  /* Other Styles */
@@ -128,15 +133,16 @@ section {
  }
 
  .container {
+  height: 85vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 2rem; /* Optional: Add a gap between the section and the div box */
+  grid-gap: .5rem; /* Optional: Add a gap between the section and the div box */
 }
 
 
 .box {
   background: linear-gradient(to right, #ffffff50, #77777750);
-  padding: 2rem;
+  padding: .1rem;
   transition: background-color 0.5s ease;
 }
 
